@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <button id="button" class="button">
+            click me
+        </button>
+    </main>
+
+    <style>
+        .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .button {
+        box-shadow: 0px 1px 0px 0px #f0f7fa;
+	    background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	    background-color:#33bdef;
+	    border-radius:6px;
+	    border:1px solid #057fd0;
+	    display:inline-block;
+	    cursor:pointer;
+	    color:#ffffff;
+	    font-family:Arial;
+	    font-size:28px;
+	    font-weight:bold;
+	    padding:32px 76px;
+	    text-decoration:none;
+	    text-shadow:0px -1px 0px #5b6178;
+    }
+    .button:hover {
+	    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	    background-color:#408c99;
+}
+    .button:active {
+	    position:relative;
+	    top:1px;
+}
+    </style>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
