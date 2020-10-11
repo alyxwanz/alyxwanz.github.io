@@ -5,7 +5,7 @@ function showNearMultiple(){
     let firstNumber = parseInt(prompt('your number', 100));
     let secondNumber = parseInt(prompt('your number', 3));
 
-    if (Number.isNaN(firstNumber) || Number.isNaN(firstNumber) || secondNumber <1) {
+    if (Number.isNaN(firstNumber) || Number.isNaN(secondNumber) || secondNumber <1) {
         alert('please enter correct data');
         return;
     }
