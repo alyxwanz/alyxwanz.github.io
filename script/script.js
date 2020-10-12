@@ -8,6 +8,10 @@ function showNearMultiple(){
     if (Number.isNaN(firstNumber) || Number.isNaN(firstNumber) || secondNumber <1) {
         alert('please enter correct data');
         return;
+    } 
+    if (firstNumber < 0 && secondNumber > 0) {
+        alert(secondNumber);
+        return;
     }
 
     const firstMultiple = parseInt(firstNumber/secondNumber)*secondNumber;
