@@ -1,24 +1,24 @@
-let button = document.getElementById('button');
+const button = document.getElementById('button');
 button.onclick = showNearMultiple; 
 
 function showNearMultiple(){
-    let firstNumber = parseInt(prompt('your number', 100));
-    let secondNumber = parseInt(prompt('your number', 3));
+    const firstNumber = parseInt(prompt('your number', 100));
+    const secondNumber = parseInt(prompt('your number', 3));
 
-    if (Number.isNaN(firstNumber) || Number.isNaN(secondNumber) || secondNumber <1) {
+    if (Number.isNaN(firstNumber) || Number.isNaN(firstNumber) || secondNumber <1) {
         alert('please enter correct data');
         return;
     }
 
-    let firstMultiple = parseInt(firstNumber/secondNumber)*secondNumber;
-    let secondMultiple = firstMultiple+secondNumber;
+    const firstMultiple = parseInt(firstNumber/secondNumber)*secondNumber;
+    const secondMultiple = firstMultiple+secondNumber;
 
-    let firstArgument = firstNumber - firstMultiple;
-    let secondArgument = secondMultiple - firstNumber
+    const firstArgument = firstNumber - firstMultiple;
+    const secondArgument = secondMultiple - firstNumber
 
-    if (secondArgument>firstArgument && firstMultiple!=0) {
+    if (secondArgument > firstArgument && firstMultiple !== 0 ) {
         alert(firstMultiple);
-    } else if (secondMultiple!=0) {
+    } else if (secondMultiple !== 0) {
         alert(secondMultiple);
     } else {
         alert('error')
