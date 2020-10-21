@@ -1,11 +1,11 @@
 const createUserBtn = document.getElementById('createUser');
 createUserBtn.onclick = task2;
 
-function createUser(firstName, lastName, age) {
+function createUser(firstName = null, lastName = null, age = null) {
     return {
-        firstName: firstName || null,
-        lastName: lastName || null,
-        age: age || null,
+        firstName,
+        lastName,
+        age,
     }
 }
 
