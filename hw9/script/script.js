@@ -1,5 +1,5 @@
 
-function numbersGame () {
+function numbersGame() {
     let userNumber = prompt('enter your number');
     let puzzleNumber = 5;
 
@@ -11,3 +11,5 @@ function numbersGame () {
         alert(parseInt(userNumber) < puzzleNumber ? 'more': 'less');
     }
 }
+
+numbersGame()
