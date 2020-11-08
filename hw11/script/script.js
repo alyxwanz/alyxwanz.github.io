@@ -5,7 +5,6 @@ function showValue(value) {
         }
     }
 }
-showValue(value);
 
 const onlyNumbers = {
     '0' : 'zero',
@@ -15,6 +14,7 @@ const onlyNumbers = {
     'string': 'string',
 }
 
+showValue(onlyNumbers);
 
 
 
