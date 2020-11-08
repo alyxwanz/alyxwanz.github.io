@@ -1,4 +1,10 @@
-function showValue(onlyNumbers) {}
+function showValue(value) {
+    for (let key in value) {
+        if (!isNaN(parseInt(key))) {
+            console.log(onlyNumbers[key])
+        }
+    }
+}
 showValue(onlyNumbers);
 
 const onlyNumbers = {
@@ -9,10 +15,6 @@ const onlyNumbers = {
     'string': 'string',
 }
 
-for (let key in onlyNumbers) {
-    if (!isNaN(parseInt(key))) {
-        console.log(onlyNumbers[key])
-    }
-}
+
 
 
