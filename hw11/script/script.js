@@ -5,7 +5,7 @@ function showValue(value) {
         }
     }
 }
-showValue(onlyNumbers);
+showValue(value);
 
 const onlyNumbers = {
     '0' : 'zero',
