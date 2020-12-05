@@ -14,6 +14,8 @@ function getTheadArray() {
     return valuesArray;
 }
 
+console.log(getTheadArray);
+
 function readTable () {
     const valuesArray = getTheadArray();
     let tableArray = [];
