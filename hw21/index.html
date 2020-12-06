@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="formItem" onsubmit="return false">
+            <div class="formInner">
+                <input type="text" value="" class="textArea" placeholder="type something">
+                <input type="submit" onclick="addLi()" value="+" class="submitBtn">
+                <input type="button" value="-" class="myBtn" onclick="removeLi()">
+            </div>
+            <ol>
+                <!-- <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li> -->
+            </ol>
+        </form>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+        }
+
+        .formItem {
+            background-color: #ffffff;
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 57px 65px;
+        }
+
+        .formInner {
+            display: flex;
+            
+        }
+
+        .submitBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #4272d7;
+            border-radius: 5px;
+            border: transparent;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .myBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #4272d7;
+            border-radius: 5px;
+            border: transparent;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .textArea {
+            background: #fafafa;
+            box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            border: transparent;
+            padding: 5px 20px;
+            font-size: 16px;
+            color: #666;
+            transition: all 0.4s ease;
+        }
+
+        form div input:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        ol {
+            padding: 0;
+        }
+
+        ol li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 50px;
+            background: #fafafa;
+            box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            border: transparent;
+            padding: 5px 20px;
+            font-size: 16px;
+            color: #666;
+            transition: all 0.4s ease;
+        }
+
+        ol li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .selected {
+            background-color: #4272d7;
+        }
+        
+    </style>
+    <script src="script/script.js"></script>
+</body>
+</html>
