@@ -5,6 +5,7 @@ let current = null;
 function addLi() {
     const textFieldNode = document.querySelector('.textArea');
     const li = document.createElement('li');
+    if (textFieldNode.value === '') return;
     li.innerHTML = textFieldNode.value;
     ol.append(li);
     textFieldNode.value = '';
